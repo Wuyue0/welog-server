@@ -18,7 +18,12 @@ const loginVaildator = [
 ]
 
 
+
 router.post('/login', loginVaildator, function (req, res, next) {
+
+  console.log(1111111111111111111111,req.body)
+
+
   const err = validationResult(req)
   //如果验证错误,empty不为空
   if (!err.isEmpty()) {

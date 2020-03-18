@@ -11,7 +11,13 @@ const router = express.Router()
 router.use(jwtAuth)
 
 //加入用户模块路由
-router.use('/user', userRouter)
+router.use('/user', userRouter);
+
+router.get('/',function(req,res){
+  console.log(11111111111111111111,req)
+  res.send('Hello World');
+})
+
 
 //自定义统一异常处理中间件，需要放在代码最后
 router.use((err, req, res, next) => {
