@@ -15,7 +15,7 @@ var http = require('http');
  * Get port from environment and store in Express.
  */
 
- // 设置默认监听端口号为3000
+ // 设置默认监听端口号为3001
 var port = normalizePort(process.env.PORT || '3001');
 app.set('port', port);
 
